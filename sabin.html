@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sabin.css">
+</head><style>a{
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+.list li{
+    list-style-type: none;
+    font-family: sans-serif;
+
+    display: none;
+}
+.icon{
+    font-size: 50px;
+    
+}
+.nav{
+    background-color: rgba(0, 0, 0, 0.769);
+    display: block;
+}
+input[type=checkbox]:checked~.list li{
+    
+    display: block;
+}
+input[type=checkbox]{
+    display:none ;
+    
+}
+.new ul {
+    display: none;
+  }
+  
+  input[type=checkbox]:checked ~  .new ul {
+    display: block;
+  }
+  a:hover{
+    background: black;
+    text-decoration:underline;
+
+  }
+  
+  
+
+</style>
+
+
+
+<body>
+    <nav class="nav">
+        <input type="checkbox" id="sabin">
+        <label for="sabin" class="icon">&#9776;</label>
+        <ul class="list">
+            <li><a href="">Home</a></li>
+            <li><a href="https://www.w3schools.com/java/default.asp">JAVA</a></li>
+            <li><input type="checkbox" id="boss"><label for="boss" class="tag" >C&#11167;</label>
+<div class="new"><ul><li><a href="https://www.w3schools.com/c/index.php" >C</a></li>
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+            <li><a href="">Link 4</a></li></ul></div></li>
+            <li><a href="https://www.w3schools.com/cpp/default.asp">C++</li>
+            <li><a href="https://www.w3schools.com/python/default.asp">Python</a></li>  
+        </ul>
+
+    </nav>
+    
+</body>
+</html>
